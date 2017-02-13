@@ -12,7 +12,7 @@ def fetch_archive_xml():
 
 
 def add_itunes_metadata(rss):
-    base_image_url = 'http://fanficast.com.br/static/media/vitrine{}.png'
+    base_image_url = 'http://fanficast.com.br/static/media/vitrine-quadrada-{}.png'
     rss.attrib['xmlns:itunes'] = 'http://www.itunes.com/dtds/podcast-1.0.dtd'
 
     channel = rss.getchildren()[0]
