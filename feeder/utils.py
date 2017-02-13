@@ -11,10 +11,12 @@ def fetch_archive_xml():
     return ''.join(response.readlines())
 
 
-def add_itunes_metadata(rss_channel):
+def add_itunes_metadata(rss):
     base_image_url = 'http://fanficast.com.br/static/media/vitrine{}.png'
+    rss.attrib['xmlns:itunes'] = 'http://www.itunes.com/dtds/podcast-1.0.dtd'
 
-    for item in rss_channel.findall('item'):
+    channel = rss.getchildren()[0]
+    for item in channel.findall('item'):
         itunes_explicit = ElementTree.SubElement(item, 'itunes:explicit')
         itunes_explicit.text = 'no'
 
@@ -27,7 +29,7 @@ def add_itunes_metadata(rss_channel):
         itunes_image = ElementTree.SubElement(item, 'itunes:image')
         itunes_image.attrib['href'] = base_image_url.format(episode_number)
 
-    return rss_channel
+    return rss
 
 
 def edit_archive_xml(xml):
@@ -57,6 +59,6 @@ def edit_archive_xml(xml):
     image_link = image.find('link')
     image_link.text = u'https://fanficast.com.br/'
 
-    rss = add_itunes_metadata(channel)
+    rss = add_itunes_metadata(rss)
 
     return ElementTree.tostring(rss)
