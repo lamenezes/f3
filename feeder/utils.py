@@ -1,5 +1,6 @@
 # coding: utf-8
 
+import re
 import urllib
 from xml.etree import ElementTree
 
@@ -8,6 +9,25 @@ def fetch_archive_xml():
     url = 'http://archive.org/services/collection-rss.php?query=creator%3A%22Fanficast%22'
     response = urllib.urlopen(url)
     return ''.join(response.readlines())
+
+
+def add_itunes_metadata(rss_channel):
+    base_image_url = 'http://fanficast.com.br/static/media/vitrine{}.png'
+
+    for item in rss_channel.findall('item'):
+        itunes_explicit = ElementTree.SubElement(item, 'itunes:explicit')
+        itunes_explicit.text = 'no'
+
+        itunes_author = ElementTree.SubElement(item, 'itunes:author')
+        itunes_author.text = 'Fanficast'
+
+        title = item.find('title')
+        episode_number = re.match('Fanficast (\d+)', title.text).groups()[0].zfill(2)
+
+        itunes_image = ElementTree.SubElement(item, 'itunes:image')
+        itunes_image.attrib['href'] = base_image_url.format(episode_number)
+
+    return rss_channel
 
 
 def edit_archive_xml(xml):
@@ -36,5 +56,7 @@ def edit_archive_xml(xml):
 
     image_link = image.find('link')
     image_link.text = u'https://fanficast.com.br/'
+
+    rss = add_itunes_metadata(channel)
 
     return ElementTree.tostring(rss)
