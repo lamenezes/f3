@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <link>http://archive.org</link>
+    <title>Internet Archive</title>
+    <description>The most recent additions to the Internet Archive collections.  This RSS feed is generated dynamically</description>
+    <webMaster>info@archive.org (Info Box)</webMaster>
+    <pubDate>Mon, 21 Aug 2017 03:08:04 GMT</pubDate>
+    <image>
+      <url>http://archive.org/images/glogo.png</url>
+      <title>Internet Archive</title>
+      <link>http://archive.org</link>
+    </image>
+    <item>
+      <title>Fanficando 1 - Game of Thrones</title>
+      <media:title>Fanficando 1 - Game of Thrones</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="http://archive.org/services/get-item-image.php?identifier=fanficast_fanficando_01_game_of_thrones&amp;mediatype=audio&amp;collection=opensource_audio"/&gt;&lt;p&gt;O Fanficast atravessou o Mar Estreito e chegou em Westeros! Na estreia do “Fanficando”, sua já conhecida host Nana Castro , acompanhada de Talita Souza , da nossa coluna “Talita Indica” e Roberta Clemente , do canal "Só Mais Um Episódio", farão fanfics de Game of Thrones, além de compar....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/opensource_audio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: Archive BitTorrent, Columbia Peaks, Metadata, Ogg Vorbis, PNG, VBR MP3&lt;/p&gt;</description>
+      <link>http://archive.org/details/fanficast_fanficando_01_game_of_thrones</link>
+      <guid>http://archive.org/details/fanficast_fanficando_01_game_of_thrones</guid>
+      <pubDate>Mon, 21 Aug 2017 01:38:46 GMT</pubDate>
+      <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/3.0/</creativeCommons:license>
+      <category>audio/opensource_audio</category>
+      <media:content url="http://archive.org/download/fanficast_fanficando_01_game_of_thrones/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="128"/>
+      <enclosure url="http://archive.org/download/fanficast_fanficando_01_game_of_thrones/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>fanfic, GoT, Game of Thrones, ships, OTP, game of thrones, GoT</media:keywords>
+    </item>
+    <item>
+      <title>Fanficast 7 - Mulher Maravilha</title>
+      <media:title>Fanficast 7 - Mulher Maravilha</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="http://archive.org/services/get-item-image.php?identifier=fanficast_7_mulher_maravilha&amp;mediatype=audio&amp;collection=opensource_audio"/&gt;&lt;p&gt;Direto de Themiscyra (ou quase lá), Ana Rosa Leme e Nana Castro falam do maior e melhor (sim!) filme de super herói que você respeita, Mulher Maravilha! Acompanhadas da convidada Talitha, a Tatah do blog Tatah Blah e de Daniel-san , o “garoto de programa” do Fanficast, conversam sobre o quant....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/opensource_audio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: Archive BitTorrent, Columbia Peaks, Metadata, Ogg Vorbis, PNG, VBR MP3&lt;/p&gt;</description>
+      <link>http://archive.org/details/fanficast_7_mulher_maravilha</link>
+      <guid>http://archive.org/details/fanficast_7_mulher_maravilha</guid>
+      <pubDate>Sat, 24 Jun 2017 00:49:46 GMT</pubDate>
+      <creativeCommons:license>http://creativecommons.org/licenses/by-nc/3.0/</creativeCommons:license>
+      <category>audio/opensource_audio</category>
+      <media:content url="http://archive.org/download/fanficast_7_mulher_maravilha/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="128"/>
+      <enclosure url="http://archive.org/download/fanficast_7_mulher_maravilha/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>fanfic, fanfiction, filme, mulher maravilha, steve trevor, ship</media:keywords>
+    </item>
+    <item>
+      <title>Fanficast 6 - Histórias que amamos com finais que odiamos</title>
+      <media:title>Fanficast 6 - Histórias que amamos com finais que odiamos</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="http://archive.org/services/get-item-image.php?identifier=Fanficast6HistoriasQueAmamosComFinaisQueOdiamos&amp;mediatype=audio&amp;collection=opensource_audio"/&gt;&lt;p&gt;Ana Rosa Leme , Nana Castro e Talita sentam para conversar, como nos velhos tempos de faculdade, sobre histórias que elas amam, mas que os finais foram ó… Neste episódio spoilerento, saiba quando é a hora de abandonar uma série, entenda porque os escritores e roteiritas de franquias (não) de....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/opensource_audio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: Archive BitTorrent, Columbia Peaks, Metadata, Ogg Vorbis, PNG, VBR MP3&lt;/p&gt;</description>
+      <link>http://archive.org/details/Fanficast6HistoriasQueAmamosComFinaisQueOdiamos</link>
+      <guid>http://archive.org/details/Fanficast6HistoriasQueAmamosComFinaisQueOdiamos</guid>
+      <pubDate>Tue, 30 May 2017 12:12:12 GMT</pubDate>
+      <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/3.0/</creativeCommons:license>
+      <category>audio/opensource_audio</category>
+      <media:content url="http://archive.org/download/Fanficast6HistoriasQueAmamosComFinaisQueOdiamos/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="128"/>
+      <enclosure url="http://archive.org/download/Fanficast6HistoriasQueAmamosComFinaisQueOdiamos/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>fanfic, ficwriter, series, seriado, livros, filmes, finais, histórias</media:keywords>
+    </item>
+    <item>
+      <title>Fanficast 5 - O fandom misterioso de Sherlock</title>
+      <media:title>Fanficast 5 - O fandom misterioso de Sherlock</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="http://archive.org/services/get-item-image.php?identifier=fanficast_5_o_fandom_misterioso_de_sherlock&amp;mediatype=audio&amp;collection=opensource_audio"/&gt;&lt;p&gt;O jogo começou e o endereço é 221B Baker Street! Neste episódio, Ana Rosa Leme e Nana Castro recebem Renata Arruda, Gabriela Troccoli e Daniele Ribeiro, as administradoras da Sherlock Brasil (maior página brasileira sobre Sherlock Holmes no Facebook), para uma conversa descontraída sobre o mai....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/opensource_audio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: Archive BitTorrent, Columbia Peaks, Metadata, Ogg Vorbis, PNG, VBR MP3&lt;/p&gt;</description>
+      <link>http://archive.org/details/fanficast_5_o_fandom_misterioso_de_sherlock</link>
+      <guid>http://archive.org/details/fanficast_5_o_fandom_misterioso_de_sherlock</guid>
+      <pubDate>Sun, 12 Feb 2017 23:44:26 GMT</pubDate>
+      <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/3.0/</creativeCommons:license>
+      <category>audio/opensource_audio</category>
+      <media:content url="http://archive.org/download/fanficast_5_o_fandom_misterioso_de_sherlock/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="128"/>
+      <enclosure url="http://archive.org/download/fanficast_5_o_fandom_misterioso_de_sherlock/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>fanfiction, Sherlock, ship war</media:keywords>
+    </item>
+    <item>
+      <title>Fanficast 4 - O fandom mágico de Harry Potter</title>
+      <media:title>Fanficast 4 - O fandom mágico de Harry Potter</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="http://archive.org/services/get-item-image.php?identifier=fanficast_4_o_fandom_magico_de_harry_potter&amp;mediatype=audio&amp;collection=opensource_audio"/&gt;&lt;p&gt;É nóis que voa, bruxão! Ana Rosa e Nchan mergulham numa conversa cheia de magia! Acompanhadas por Nana Castro, a voz por trás do twitter do Fanficast, Renata Ventura , escritora dos livros "A Arma Escarlate" e "A Comissão Chapeleira", e Marina Anderi, uma das administradoras do site Potterish, ....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/opensource_audio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: Archive BitTorrent, Columbia Peaks, Metadata, Ogg Vorbis, PNG, VBR MP3&lt;/p&gt;</description>
+      <link>http://archive.org/details/fanficast_4_o_fandom_magico_de_harry_potter</link>
+      <guid>http://archive.org/details/fanficast_4_o_fandom_magico_de_harry_potter</guid>
+      <pubDate>Sat, 24 Dec 2016 17:22:31 GMT</pubDate>
+      <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/3.0/</creativeCommons:license>
+      <category>audio/opensource_audio</category>
+      <media:content url="http://archive.org/download/fanficast_4_o_fandom_magico_de_harry_potter/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="128"/>
+      <enclosure url="http://archive.org/download/fanficast_4_o_fandom_magico_de_harry_potter/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>fanfic, fic, ficwriter, podcast</media:keywords>
+    </item>
+    <item>
+      <title>Fanficast 3 - Yaoi/BL (18+)</title>
+      <media:title>Fanficast 3 - Yaoi/BL (18+)</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="http://archive.org/services/get-item-image.php?identifier=Fanficast_3_Yaoi_Bl&amp;mediatype=audio&amp;collection=opensource_audio"/&gt;&lt;p&gt;Ana e Nchan batem um papo sobre o BL (Boys Love), mais conhecido por nós ocidentais como Yaoi. Para isso, o Fanficast contou com a participação da ficwriter Andreia Kennen, escritora desde 2007, amante de Yaoi, tendo produções amplamente ambientadas nos fandons de Naruto e Saint Seya....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/opensource_audio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: Archive BitTorrent, Columbia Peaks, Metadata, Ogg Vorbis, PNG, VBR MP3&lt;/p&gt;</description>
+      <link>http://archive.org/details/Fanficast_3_Yaoi_Bl</link>
+      <guid>http://archive.org/details/Fanficast_3_Yaoi_Bl</guid>
+      <pubDate>Sat, 24 Dec 2016 13:48:41 GMT</pubDate>
+      <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/3.0/</creativeCommons:license>
+      <category>audio/opensource_audio</category>
+      <media:content url="http://archive.org/download/Fanficast_3_Yaoi_Bl/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="128"/>
+      <enclosure url="http://archive.org/download/Fanficast_3_Yaoi_Bl/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>fanfic, fic, ficwriter, podcast</media:keywords>
+    </item>
+    <item>
+      <title>Fanficast 2 - O universo open source de Lovecraft</title>
+      <media:title>Fanficast 2 - O universo open source de Lovecraft</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="http://archive.org/services/get-item-image.php?identifier=Fanficas_t2_o_universo_open_source_de_lovecraft&amp;mediatype=audio&amp;collection=opensource_audio"/&gt;&lt;p&gt;Ana e Nchan batem um papo com Eduardo Spohr (Filosofia Nerd) sobre um fandom inominável! Neste episódio, conheça um pouco do universo criado por H.P. Lovecraft e saiba como seu mundo começou a ser expandido....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/opensource_audio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: Archive BitTorrent, Columbia Peaks, Metadata, Ogg Vorbis, PNG, VBR MP3&lt;/p&gt;</description>
+      <link>http://archive.org/details/Fanficas_t2_o_universo_open_source_de_lovecraft</link>
+      <guid>http://archive.org/details/Fanficas_t2_o_universo_open_source_de_lovecraft</guid>
+      <pubDate>Sat, 24 Dec 2016 12:40:30 GMT</pubDate>
+      <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/3.0/</creativeCommons:license>
+      <category>audio/opensource_audio</category>
+      <media:content url="http://archive.org/download/Fanficas_t2_o_universo_open_source_de_lovecraft/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="128"/>
+      <enclosure url="http://archive.org/download/Fanficas_t2_o_universo_open_source_de_lovecraft/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>fanfic, fic, ficwriter, podcast</media:keywords>
+    </item>
+    <item>
+      <title>Fanficast 1 - O Abc Das Fanfics</title>
+      <media:title>Fanficast 1 - O Abc Das Fanfics</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="http://archive.org/services/get-item-image.php?identifier=fanficast_1_o_abc_das_fanfics&amp;mediatype=audio&amp;collection=opensource_audio"/&gt;&lt;p&gt;No episódio de hoje nós apresentamos as palavras que estão na ponta da língua (e dos dedos) de quem lê e escreve fanfics! Aprenda a classificar uma fanfic a partir de vários aspectos, saiba quais são as coisas que mais causam discórdia entre fãs e conheça os tipos de fanfics que mais gosta....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/opensource_audio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: Archive BitTorrent, Columbia Peaks, Metadata, Ogg Vorbis, PNG, VBR MP3&lt;/p&gt;</description>
+      <link>http://archive.org/details/fanficast_1_o_abc_das_fanfics</link>
+      <guid>http://archive.org/details/fanficast_1_o_abc_das_fanfics</guid>
+      <pubDate>Sat, 24 Dec 2016 12:09:45 GMT</pubDate>
+      <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/3.0/</creativeCommons:license>
+      <category>audio/opensource_audio</category>
+      <media:content url="http://archive.org/download/fanficast_1_o_abc_das_fanfics/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="128"/>
+      <enclosure url="http://archive.org/download/fanficast_1_o_abc_das_fanfics/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>fic, fanfic, ficwriter, podcast</media:keywords>
+    </item>
+    <item>
+      <title>Fanficast 0 - O que é fanfic</title>
+      <media:title>Fanficast 0 - O que é fanfic</media:title>
+      <description>&lt;img width="160" style="padding-right:3px;float:left;" src="http://archive.org/services/get-item-image.php?identifier=fanficast_0_o_que_e_fanfic&amp;mediatype=audio&amp;collection=opensource_audio"/&gt;&lt;p&gt;No episódio de estreia do Fanficast, te convidamos para entrar no universo das fanfictions! Entenda o que é um ficwriter, a importância dos leitores para os escritores de fanfics, qual a função do beta-reader e saiba como conhecemos as ficções de fãs! Site: fanficast.com.br/ Facebook: facebo....&lt;/p&gt;&lt;p&gt;This item belongs to: audio/opensource_audio.&lt;/p&gt;&lt;p&gt;This item has files of the following types: Archive BitTorrent, Columbia Peaks, Metadata, Ogg Vorbis, PNG, VBR MP3&lt;/p&gt;</description>
+      <link>http://archive.org/details/fanficast_0_o_que_e_fanfic</link>
+      <guid>http://archive.org/details/fanficast_0_o_que_e_fanfic</guid>
+      <pubDate>Mon, 19 Dec 2016 01:19:04 GMT</pubDate>
+      <creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/3.0/</creativeCommons:license>
+      <category>audio/opensource_audio</category>
+      <media:content url="http://archive.org/download/fanficast_0_o_que_e_fanfic/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="128"/>
+      <enclosure url="http://archive.org/download/fanficast_0_o_que_e_fanfic/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111"/>
+      <media:keywords>fanfic, fic, ficwriter, podcast</media:keywords>
+    </item>
+  </channel>
+</rss>
+
