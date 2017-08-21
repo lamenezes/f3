@@ -24,7 +24,7 @@ def add_itunes_metadata(rss):
         itunes_author.text = 'Fanficast'
 
         title = item.find('title')
-        episode_number = re.match('Fanficast (\d+)', title.text).groups()[0].zfill(2)
+        episode_number = re.match('.* (\d+) - .*', title.text).groups()[0].zfill(2)
 
         itunes_image = ElementTree.SubElement(item, 'itunes:image')
         itunes_image.attrib['href'] = base_image_url.format(episode_number)
