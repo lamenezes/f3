@@ -4,10 +4,6 @@ import re
 import urllib
 from xml.etree import ElementTree
 
-xml_namespaces = {
-    'itunes': 'http://www.itunes.com/dtds/podcast-1.0.dtd'
-}
-
 
 def fetch_archive_xml():
     url = 'http://archive.org/services/collection-rss.php?query=creator%3A%22Fanficast%22'
@@ -21,20 +17,19 @@ def add_itunes_metadata(rss):
     # vitrine-quadrada-virilhada-cultural-10
     base_image_url = 'http://fanficast.com.br/static/media/vitrine-quadrada-{}.png'
     rss.attrib['xmlns:itunes'] = 'http://www.itunes.com/dtds/podcast-1.0.dtd'
-    namespace_metadata = {'{%s}' % xml_namespaces['itunes']: ''}
 
     channel = rss.getchildren()[0]
     for item in channel.findall('item'):
-        itunes_explicit = ElementTree.SubElement(item, 'itunes:explicit', namespace_metadata)
+        itunes_explicit = ElementTree.SubElement(item, 'itunes:explicit')
         itunes_explicit.text = 'no'
 
-        itunes_author = ElementTree.SubElement(item, 'itunes:author', namespace_metadata)
+        itunes_author = ElementTree.SubElement(item, 'itunes:author')
         itunes_author.text = 'Fanficast'
 
         title = item.find('title')
         episode_number = re.match('.* (\d+) - .*', title.text).groups()[0].zfill(2)
 
-        itunes_image = ElementTree.SubElement(item, 'image', namespace_metadata)
+        itunes_image = ElementTree.SubElement(item, 'itunes:image')
         itunes_image.attrib['href'] = base_image_url.format(episode_number)
 
     return rss
