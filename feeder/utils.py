@@ -11,62 +11,89 @@ def fetch_archive_xml():
     return ''.join(response.readlines())
 
 
-def add_itunes_metadata(rss):
+def enrich_archive_xml(xml):
+    rss = parse_xml(xml)
+    rss = update_channel_metadata(rss)
+    rss = update_items_metadata(rss)
+    return ElementTree.tostring(rss)
+
+
+def parse_xml(xml):
+    return ElementTree.fromstring(xml)
+
+
+def update_channel_metadata(rss):
+    channel = list(rss)[0]
+    fanficast_logo_url = 'http://fanficast.com.br/static/img/fc_fundo.png'
+    description = 'Vem falar de fanfic com a gente! Hospedado por https://archive.org'
+    fields = {
+        'link': 'https://fanficast.com.br/',
+        'language': 'pt-br',
+        'title': 'Fanficast',
+        'description': description,
+        'webMaster': 'contato@fanficast.com.br',
+        'image': {
+            'url': fanficast_logo_url,
+            'title': 'Fanficast',
+            'link': 'https://fanficast.com.br/',
+        },
+        'copyright': 'CC BY-NC-ND 4.0',
+        'itunes:owner': {
+            'itunes:name': 'Fanficast',
+            'itunes:email': 'contato@fanficast.com.br',
+        },
+        'itunes:author': 'Fanficast',
+        'itunes:summary': description,
+        'itunes:type': 'episodic',
+        'itunes:explicit': 'false',
+    }
+    _append_or_update_fields(channel, fields)
+
+    itunes_image = ElementTree.SubElement(channel, "itunes:image")
+    itunes_image.attrib['href'] = fanficast_logo_url
+
+    category = ElementTree.SubElement(channel, "itunes:category")
+    category.attrib['text'] = "Society &amp; Culture"
+
+    return rss
+
+
+def _append_or_update_fields(node, fields: dict):
+    for field_name, value in fields.items():
+        field = node.find(field_name)
+        if field is None:
+            field = ElementTree.SubElement(node, field_name)
+
+        if isinstance(value, dict):
+            _append_or_update_fields(field, value)
+            continue
+
+        field.text = value
+
+
+def update_items_metadata(rss):
+    rss.attrib['xmlns:itunes'] = 'http://www.itunes.com/dtds/podcast-1.0.dtd'
+
+    channel = list(rss)[0]
+    for item in channel.findall('item'):
+        fields = {
+            'itunes:explicit': 'false',
+            'itunes:title': item.find('title').text,
+        }
+        _append_or_update_fields(item, fields)
+
+        itunes_image = ElementTree.SubElement(item, 'itunes:image')
+        itunes_image.attrib['href'] = _get_image_url(item)
+
+    return rss
+
+
+def _get_image_url(item):
     # TODO: change podcast image name convention to:
     # vitrine-quadrada-fanficando-1 or vitrine-quadrada-fanficast-2 or
     # vitrine-quadrada-virilhada-cultural-10
+
+    title = item.find('title')
     base_image_url = 'http://fanficast.com.br/static/media/vitrine-quadrada-{}.png'
-    rss.attrib['xmlns:itunes'] = 'http://www.itunes.com/dtds/podcast-1.0.dtd'
-
-    channel = rss.getchildren()[0]
-    for item in channel.findall('item'):
-        itunes_explicit = ElementTree.SubElement(item, 'itunes:explicit')
-        itunes_explicit.text = 'no'
-
-        itunes_author = ElementTree.SubElement(item, 'itunes:author')
-        itunes_author.text = 'Fanficast'
-
-        title = item.find('title')
-        episode_number = re.match('.* (\d+) - .*', title.text).groups()[0].zfill(2)
-
-        itunes_image = ElementTree.SubElement(item, 'itunes:image')
-        itunes_image.attrib['href'] = base_image_url.format(episode_number)
-
-    return rss
-
-
-def update_metadata(rss):
-    channel = rss.getchildren()[0]
-
-    link = channel.find('link')
-    link.text = u'https://fanficast.com.br/'
-
-    title = channel.find('title')
-    title.text = u'Fanficast'
-
-    description = channel.find('description')
-    description.text = (u'Podcast brasileiro sobre fanfics, escrita e cultura de fã. '
-                        u'Hospedado por https://archive.org')
-
-    webMaster = channel.find('webMaster')
-    webMaster.text = u'contato@fanficast.com.br'
-
-    image = channel.find('image')
-    image_url = image.find('url')
-    image_url.text = u'http://fanficast.com.br/static/img/fc_fundo.png'
-
-    image_title = image.find('title')
-    image_title.text = u'Fanficast'
-
-    image_link = image.find('link')
-    image_link.text = u'https://fanficast.com.br/'
-
-    return rss
-
-
-def edit_archive_xml(xml):
-    rss = ElementTree.fromstring(xml)
-    rss = update_metadata(rss)
-    rss = add_itunes_metadata(rss)
-
-    return ElementTree.tostring(rss)
+    episode_number = re.match(r'.* (\d+) - .*', title.text).groups()[0]
+    return base_image_url.format(episode_number.zfill(2))
