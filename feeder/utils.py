@@ -1,14 +1,15 @@
 # coding: utf-8
 
 import re
-import urllib
 from xml.etree import ElementTree
+
+import requests
 
 
 def fetch_archive_xml():
     url = 'http://archive.org/services/collection-rss.php?query=creator%3A%22Fanficast%22'
-    response = urllib.urlopen(url)
-    return ''.join(response.readlines())
+    response = requests.get(url)
+    return response.text
 
 
 def enrich_archive_xml(xml):
@@ -54,6 +55,12 @@ def update_channel_metadata(rss):
 
     category = ElementTree.SubElement(channel, "itunes:category")
     category.attrib['text'] = "Society &amp; Culture"
+
+    category = ElementTree.SubElement(channel, "itunes:category")
+    category.attrib['text'] = "Arts"
+
+    category = ElementTree.SubElement(channel, "itunes:category")
+    category.attrib['text'] = "Fiction"
 
     return rss
 

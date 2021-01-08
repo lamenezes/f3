@@ -41,7 +41,7 @@ def test_enrich_archive_xml(xml):
   <channel>
     <link>https://fanficast.com.br/</link>
     <title>Fanficast</title>
-    <description>Podcast brasileiro sobre fanfics, escrita e cultura de f&#227;. Hospedado por https://archive.org</description>
+    <description>Vem falar de fanfic com a gente! Hospedado por https://archive.org</description>
     <webMaster>contato@fanficast.com.br</webMaster>
     <pubDate>Mon, 21 Aug 2017 03:08:04 GMT</pubDate>
     <image>
@@ -61,7 +61,7 @@ def test_enrich_archive_xml(xml):
       <ns0:content url="http://archive.org/download/fanficast_fanficando_01_game_of_thrones/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="128" />
       <enclosure url="http://archive.org/download/fanficast_fanficando_01_game_of_thrones/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111" />
       <ns0:keywords>fanfic, GoT, Game of Thrones, ships, OTP, game of thrones, GoT</ns0:keywords>
-    <itunes:explicit>false</itunes:explicit><itunes:image href="http://fanficast.com.br/static/media/vitrine-quadrada-01.png" /></item>
+    <itunes:explicit>false</itunes:explicit><itunes:title>Fanficando 1 - Game of Thrones</itunes:title><itunes:image href="http://fanficast.com.br/static/media/vitrine-quadrada-01.png" /></item>
     <item>
       <title>Fanficast 7 - Mulher Maravilha</title>
       <ns0:title>Fanficast 7 - Mulher Maravilha</ns0:title>
@@ -74,7 +74,7 @@ def test_enrich_archive_xml(xml):
       <ns0:content url="http://archive.org/download/fanficast_7_mulher_maravilha/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="128" />
       <enclosure url="http://archive.org/download/fanficast_7_mulher_maravilha/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111" />
       <ns0:keywords>fanfic, fanfiction, filme, mulher maravilha, steve trevor, ship</ns0:keywords>
-    <itunes:explicit>false</itunes:explicit><itunes:image href="http://fanficast.com.br/static/media/vitrine-quadrada-07.png" /></item>
+    <itunes:explicit>false</itunes:explicit><itunes:title>Fanficast 7 - Mulher Maravilha</itunes:title><itunes:image href="http://fanficast.com.br/static/media/vitrine-quadrada-07.png" /></item>
     <item>
       <title>Fanficast 6 - Hist&#243;rias que amamos com finais que odiamos</title>
       <ns0:title>Fanficast 6 - Hist&#243;rias que amamos com finais que odiamos</ns0:title>
@@ -87,7 +87,7 @@ def test_enrich_archive_xml(xml):
       <ns0:content url="http://archive.org/download/Fanficast6HistoriasQueAmamosComFinaisQueOdiamos/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="128" />
       <enclosure url="http://archive.org/download/Fanficast6HistoriasQueAmamosComFinaisQueOdiamos/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111" />
       <ns0:keywords>fanfic, ficwriter, series, seriado, livros, filmes, finais, hist&#243;rias</ns0:keywords>
-    <itunes:explicit>false</itunes:explicit><itunes:image href="http://fanficast.com.br/static/media/vitrine-quadrada-06.png" /></item>
+    <itunes:explicit>false</itunes:explicit><itunes:title>Fanficast 6 - Hist&#243;rias que amamos com finais que odiamos</itunes:title><itunes:image href="http://fanficast.com.br/static/media/vitrine-quadrada-06.png" /></item>
     <item>
       <title>Fanficast 5 - O fandom misterioso de Sherlock</title>
       <ns0:title>Fanficast 5 - O fandom misterioso de Sherlock</ns0:title>
@@ -100,7 +100,7 @@ def test_enrich_archive_xml(xml):
       <ns0:content url="http://archive.org/download/fanficast_5_o_fandom_misterioso_de_sherlock/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="128" />
       <enclosure url="http://archive.org/download/fanficast_5_o_fandom_misterioso_de_sherlock/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111" />
       <ns0:keywords>fanfiction, Sherlock, ship war</ns0:keywords>
-    <itunes:explicit>false</itunes:explicit><itunes:image href="http://fanficast.com.br/static/media/vitrine-quadrada-05.png" /></item>
+    <itunes:explicit>false</itunes:explicit><itunes:title>Fanficast 5 - O fandom misterioso de Sherlock</itunes:title><itunes:image href="http://fanficast.com.br/static/media/vitrine-quadrada-05.png" /></item>
     <item>
       <title>Fanficast 4 - O fandom m&#225;gico de Harry Potter</title>
       <ns0:title>Fanficast 4 - O fandom m&#225;gico de Harry Potter</ns0:title>
@@ -113,7 +113,7 @@ def test_enrich_archive_xml(xml):
       <ns0:content url="http://archive.org/download/fanficast_4_o_fandom_magico_de_harry_potter/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="128" />
       <enclosure url="http://archive.org/download/fanficast_4_o_fandom_magico_de_harry_potter/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111" />
       <ns0:keywords>fanfic, fic, ficwriter, podcast</ns0:keywords>
-    <itunes:explicit>false</itunes:explicit><itunes:image href="http://fanficast.com.br/static/media/vitrine-quadrada-04.png" /></item>
+    <itunes:explicit>false</itunes:explicit><itunes:title>Fanficast 4 - O fandom m&#225;gico de Harry Potter</itunes:title><itunes:image href="http://fanficast.com.br/static/media/vitrine-quadrada-04.png" /></item>
     <item>
       <title>Fanficast 3 - Yaoi/BL (18+)</title>
       <ns0:title>Fanficast 3 - Yaoi/BL (18+)</ns0:title>
@@ -126,7 +126,7 @@ def test_enrich_archive_xml(xml):
       <ns0:content url="http://archive.org/download/Fanficast_3_Yaoi_Bl/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="128" />
       <enclosure url="http://archive.org/download/Fanficast_3_Yaoi_Bl/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111" />
       <ns0:keywords>fanfic, fic, ficwriter, podcast</ns0:keywords>
-    <itunes:explicit>false</itunes:explicit><itunes:image href="http://fanficast.com.br/static/media/vitrine-quadrada-03.png" /></item>
+    <itunes:explicit>false</itunes:explicit><itunes:title>Fanficast 3 - Yaoi/BL (18+)</itunes:title><itunes:image href="http://fanficast.com.br/static/media/vitrine-quadrada-03.png" /></item>
     <item>
       <title>Fanficast 2 - O universo open source de Lovecraft</title>
       <ns0:title>Fanficast 2 - O universo open source de Lovecraft</ns0:title>
@@ -139,7 +139,7 @@ def test_enrich_archive_xml(xml):
       <ns0:content url="http://archive.org/download/Fanficas_t2_o_universo_open_source_de_lovecraft/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="128" />
       <enclosure url="http://archive.org/download/Fanficas_t2_o_universo_open_source_de_lovecraft/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111" />
       <ns0:keywords>fanfic, fic, ficwriter, podcast</ns0:keywords>
-    <itunes:explicit>false</itunes:explicit><itunes:image href="http://fanficast.com.br/static/media/vitrine-quadrada-02.png" /></item>
+    <itunes:explicit>false</itunes:explicit><itunes:title>Fanficast 2 - O universo open source de Lovecraft</itunes:title><itunes:image href="http://fanficast.com.br/static/media/vitrine-quadrada-02.png" /></item>
     <item>
       <title>Fanficast 1 - O Abc Das Fanfics</title>
       <ns0:title>Fanficast 1 - O Abc Das Fanfics</ns0:title>
@@ -152,7 +152,7 @@ def test_enrich_archive_xml(xml):
       <ns0:content url="http://archive.org/download/fanficast_1_o_abc_das_fanfics/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="128" />
       <enclosure url="http://archive.org/download/fanficast_1_o_abc_das_fanfics/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111" />
       <ns0:keywords>fic, fanfic, ficwriter, podcast</ns0:keywords>
-    <itunes:explicit>false</itunes:explicit><itunes:image href="http://fanficast.com.br/static/media/vitrine-quadrada-01.png" /></item>
+    <itunes:explicit>false</itunes:explicit><itunes:title>Fanficast 1 - O Abc Das Fanfics</itunes:title><itunes:image href="http://fanficast.com.br/static/media/vitrine-quadrada-01.png" /></item>
     <item>
       <title>Fanficast 0 - O que &#233; fanfic</title>
       <ns0:title>Fanficast 0 - O que &#233; fanfic</ns0:title>
@@ -165,6 +165,6 @@ def test_enrich_archive_xml(xml):
       <ns0:content url="http://archive.org/download/fanficast_0_o_que_e_fanfic/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" medium="audio" expression="full" isDefault="true" bitrate="128" />
       <enclosure url="http://archive.org/download/fanficast_0_o_que_e_fanfic/format=VBR+MP3&amp;ignore=x.mp3" type="audio/mpeg" length="111111" />
       <ns0:keywords>fanfic, fic, ficwriter, podcast</ns0:keywords>
-    <itunes:explicit>false</itunes:explicit><itunes:image href="http://fanficast.com.br/static/media/vitrine-quadrada-00.png" /></item>
-  <language>pt-br</language><copyright>CC BY-NC-ND 4.0</copyright><itunes:owner><itunes:name>Fanficast</itunes:name><itunes:email>contato@fanficast.com.br</itunes:email></itunes:owner><itunes:author>Fanficast</itunes:author><itunes:summary>Podcast brasileiro sobre fanfics, escrita e cultura de f&#227;. Hospedado por https://archive.org</itunes:summary><itunes:type>episodic</itunes:type><itunes:image href="http://fanficast.com.br/static/img/fc_fundo.png" /><itunes:category text="Society &amp;amp; Culture" /></channel>
+    <itunes:explicit>false</itunes:explicit><itunes:title>Fanficast 0 - O que &#233; fanfic</itunes:title><itunes:image href="http://fanficast.com.br/static/media/vitrine-quadrada-00.png" /></item>
+  <language>pt-br</language><copyright>CC BY-NC-ND 4.0</copyright><itunes:owner><itunes:name>Fanficast</itunes:name><itunes:email>contato@fanficast.com.br</itunes:email></itunes:owner><itunes:author>Fanficast</itunes:author><itunes:summary>Vem falar de fanfic com a gente! Hospedado por https://archive.org</itunes:summary><itunes:type>episodic</itunes:type><itunes:explicit>false</itunes:explicit><itunes:image href="http://fanficast.com.br/static/img/fc_fundo.png" /><itunes:category text="Society &amp;amp; Culture" /><itunes:category text="Arts" /><itunes:category text="Fiction" /></channel>
 </rss>"""
