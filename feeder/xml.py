@@ -3,14 +3,6 @@
 import re
 from xml.etree import ElementTree
 
-import requests
-
-
-def fetch_archive_xml():
-    url = 'http://archive.org/services/collection-rss.php?query=creator%3A%22Fanficast%22'
-    response = requests.get(url)
-    return response.text
-
 
 def enrich_archive_xml(xml):
     rss = parse_xml(xml)

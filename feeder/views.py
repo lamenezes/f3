@@ -1,8 +1,15 @@
 # coding: utf-8
 
+import requests
 from django.http import HttpResponse
 
-from feeder.utils import fetch_archive_xml, enrich_archive_xml
+from feeder.xml import enrich_archive_xml
+
+
+def fetch_archive_xml():
+    url = 'http://archive.org/services/collection-rss.php?query=creator%3A%22Fanficast%22'
+    response = requests.get(url)
+    return response.text
 
 
 def feed(request):
