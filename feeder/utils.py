@@ -54,7 +54,7 @@ def update_channel_metadata(rss):
     itunes_image.attrib['href'] = fanficast_logo_url
 
     category = ElementTree.SubElement(channel, "itunes:category")
-    category.attrib['text'] = "Society &amp; Culture"
+    category.attrib['text'] = "Society & Culture"
 
     category = ElementTree.SubElement(channel, "itunes:category")
     category.attrib['text'] = "Arts"
