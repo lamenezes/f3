@@ -24,7 +24,7 @@ def update_channel_metadata(rss):
         'language': 'pt-br',
         'title': 'Fanficast',
         'description': description,
-        'webMaster': 'contato@fanficast.com.br',
+        'webMaster': 'contato@fanficast.com.br (Fanficast)',
         'image': {
             'url': fanficast_logo_url,
             'title': 'Fanficast',
@@ -38,30 +38,29 @@ def update_channel_metadata(rss):
         'itunes:author': 'Fanficast',
         'itunes:summary': description,
         'itunes:type': 'episodic',
-        'itunes:explicit': 'false',
+        'itunes:explicit': 'no',
     }
-    _append_or_update_fields(channel, fields)
+    _append_or_update_fields(channel, fields, position=6)
 
-    itunes_image = ElementTree.SubElement(channel, "itunes:image")
-    itunes_image.attrib['href'] = fanficast_logo_url
+    channel.insert(6, ElementTree.Element("itunes:image", attrib={'href': fanficast_logo_url}))
+    channel.insert(
+        6, ElementTree.Element("itunes:category", attrib={'text': "Society & Culture"})
+    )
+    channel.insert(6, ElementTree.Element("itunes:category", attrib={'text': "Arts"}))
+    channel.insert(6, ElementTree.Element("itunes:category", attrib={'text': "Fiction"}))
 
-    category = ElementTree.SubElement(channel, "itunes:category")
-    category.attrib['text'] = "Society & Culture"
-
-    category = ElementTree.SubElement(channel, "itunes:category")
-    category.attrib['text'] = "Arts"
-
-    category = ElementTree.SubElement(channel, "itunes:category")
-    category.attrib['text'] = "Fiction"
+    attribs = {'href': "https://feed.fanficast.com.br/", 'rel': "self", 'type': "application/rss+xml"}
+    channel.insert(6, ElementTree.Element("atom:link", attrib=attribs))
 
     return rss
 
 
-def _append_or_update_fields(node, fields: dict):
+def _append_or_update_fields(node, fields: dict, position=-1):
     for field_name, value in fields.items():
         field = node.find(field_name)
         if field is None:
-            field = ElementTree.SubElement(node, field_name)
+            field = ElementTree.Element(field_name)
+            node.insert(position, field)
 
         if isinstance(value, dict):
             _append_or_update_fields(field, value)
@@ -72,11 +71,12 @@ def _append_or_update_fields(node, fields: dict):
 
 def update_items_metadata(rss):
     rss.attrib['xmlns:itunes'] = 'http://www.itunes.com/dtds/podcast-1.0.dtd'
+    rss.attrib['xmlns:atom'] = 'http://www.w3.org/2005/Atom'
 
     channel = list(rss)[0]
     for item in channel.findall('item'):
         fields = {
-            'itunes:explicit': 'false',
+            'itunes:explicit': 'no',
             'itunes:title': item.find('title').text,
         }
         _append_or_update_fields(item, fields)
