@@ -4,17 +4,21 @@ from xml.etree import ElementTree
 
 import pytest
 
-from feeder.xml import update_items_metadata, enrich_archive_xml, update_channel_metadata
+from feeder.xml import (
+    update_items_metadata,
+    enrich_archive_xml,
+    update_channel_metadata,
+)
 
 
-RESOURCES_FOLDER = os.path.join(os.path.dirname(__file__), 'resources')
+RESOURCES_FOLDER = os.path.join(os.path.dirname(__file__), "resources")
 
 
 @pytest.fixture
 def xml():
-    xml_path = os.path.join(RESOURCES_FOLDER, 'fanficast-feed.xml')
+    xml_path = os.path.join(RESOURCES_FOLDER, "fanficast-feed.xml")
     xml_file = open(xml_path)
-    return ''.join(xml_file.readlines())
+    return "".join(xml_file.readlines())
 
 
 @pytest.fixture
@@ -29,15 +33,17 @@ def updated_rss(rss):
 
 def test_update_items_metadata(updated_rss):
     rss = update_items_metadata(updated_rss)
-    rss.attrib['xmlns:itunes'] = 'http://www.itunes.com/dtds/podcast-1.0.dtd'
+    rss.attrib["xmlns:itunes"] = "http://www.itunes.com/dtds/podcast-1.0.dtd"
     xml = ElementTree.tostring(rss).decode()
-    assert re.search(r'(\d+).png', xml)
+    assert re.search(r"(\d+).png", xml)
 
 
 def test_enrich_archive_xml(xml):
     final_xml = enrich_archive_xml(xml).decode()
-    open('fanficast.xml', 'w').write(final_xml)
-    assert final_xml == """<rss xmlns:ns0="http://search.yahoo.com/mrss/" xmlns:ns1="http://backend.userland.com/creativeCommonsRssModule" version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+    open("fanficast.xml", "w").write(final_xml)
+    assert (
+        final_xml
+        == """<rss xmlns:ns0="http://search.yahoo.com/mrss/" xmlns:ns1="http://backend.userland.com/creativeCommonsRssModule" version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <link>https://fanficast.com.br/</link>
     <title>Fanficast</title>
@@ -168,3 +174,4 @@ def test_enrich_archive_xml(xml):
     <itunes:image href="http://fanficast.com.br/static/media/vitrine-quadrada-00.png" /></item>
   </channel>
 </rss>"""
+    )
